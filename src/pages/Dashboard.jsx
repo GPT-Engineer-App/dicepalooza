@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Bitcoin, DiceIcon, MessageSquare, User } from 'lucide-react';
+import { Bitcoin, Dice, MessageSquare, User } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 
 const Dashboard = () => {
@@ -38,7 +38,7 @@ const Dashboard = () => {
         <Card className="col-span-1 md:col-span-2">
           <CardHeader>
             <CardTitle className="flex items-center">
-              <DiceIcon className="mr-2" /> Dice Game
+              <Dice className="mr-2" /> Dice Game
             </CardTitle>
             <CardDescription>Place your bets and test your luck!</CardDescription>
           </CardHeader>
