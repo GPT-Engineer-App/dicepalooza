@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Bitcoin, Dice, MessageSquare, User } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 
 const Dashboard = () => {
   const [betAmount, setBetAmount] = useState('');
@@ -25,8 +26,10 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white p-4">
-      <header className="mb-8">
+    <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+      <Navigation />
+      <div className="p-4">
+        <header className="mb-8">
         <h1 className="text-3xl font-bold">Welcome, User#1234</h1>
         <p className="text-xl mt-2">Balance: 0.05 BTC</p>
       </header>

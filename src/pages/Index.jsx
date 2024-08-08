@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Bitcoin, DiceIcon } from 'lucide-react';
+import Navigation from '@/components/Navigation';
 
 const Index = () => {
   const [username, setUsername] = useState('');
@@ -22,8 +23,10 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-white p-4">
-      <header className="mb-8 text-center">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+      <Navigation />
+      <div className="flex-grow flex flex-col items-center justify-center p-4">
+        <header className="mb-8 text-center">
         <h1 className="text-4xl font-bold flex items-center justify-center">
           <Bitcoin className="mr-2" /> Bitcoin Casino
         </h1>
