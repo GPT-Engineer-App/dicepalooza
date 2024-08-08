@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Bitcoin, Dice } from 'lucide-react';
+import { Bitcoin, Dice1 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 
 const Index = () => {
@@ -114,7 +114,7 @@ const Index = () => {
         <Card className="w-full max-w-md">
           <CardHeader>
             <CardTitle className="flex items-center justify-center">
-              <Dice className="mr-2" /> Dice Game
+              <Dice1 className="mr-2" /> Dice Game
             </CardTitle>
             <CardDescription>Test your luck with our provably fair dice game!</CardDescription>
           </CardHeader>
